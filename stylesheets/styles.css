@@ -1,0 +1,137 @@
+/* line 3, ../sass/styles.scss */
+html {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* line 5, ../sass/styles.scss */
+.blue {
+  color: #4885ed;
+}
+
+/* line 6, ../sass/styles.scss */
+.yellow {
+  color: #f4c20d;
+}
+
+/* line 7, ../sass/styles.scss */
+.red {
+  color: #db3236;
+}
+
+/* line 8, ../sass/styles.scss */
+.green {
+  color: #3cba54;
+}
+
+/* line 10, ../sass/styles.scss */
+#header {
+  background: #fff;
+  height: 35px;
+}
+/* line 14, ../sass/styles.scss */
+#header a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+/* line 22, ../sass/styles.scss */
+#topMenu {
+  padding: 10px 0;
+  background: #333;
+  color: #fff;
+}
+/* line 27, ../sass/styles.scss */
+#topMenu a {
+  padding: 0 5px;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* line 34, ../sass/styles.scss */
+#messageBody {
+  padding: 0 20px;
+  background: #eee;
+}
+
+/* line 40, ../sass/styles.scss */
+#key {
+  font-weight: bold;
+}
+
+/* line 46, ../sass/styles.scss */
+.item {
+  display: block;
+  min-height: 30px;
+  position: relative;
+  border-bottom: 1px solid #ccc;
+  padding: 8px 0 0;
+  cursor: pointer;
+  overflow: hidden;
+}
+/* line 55, ../sass/styles.scss */
+.item .name {
+  width: 20%;
+  float: left;
+}
+/* line 60, ../sass/styles.scss */
+.item .subject {
+  width: 40%;
+  float: left;
+}
+/* line 65, ../sass/styles.scss */
+.item .tags {
+  width: 10%;
+  float: left;
+}
+/* line 72, ../sass/styles.scss */
+.item .date {
+  width: 20%;
+  float: left;
+}
+/* line 76, ../sass/styles.scss */
+.item .message {
+  display: none;
+  margin-top: 25px;
+  background: #f2f2f2;
+  padding: 10px 0 20px;
+}
+/* line 85, ../sass/styles.scss */
+.item.expand .message {
+  display: block;
+  border-top: 1px solid #ccc;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 900px) {
+  /* line 97, ../sass/styles.scss */
+  body {
+    font-size: 14px;
+  }
+
+  /* line 103, ../sass/styles.scss */
+  .tags {
+    display: none;
+  }
+
+  /* line 109, ../sass/styles.scss */
+  .item .name {
+    width: 30%;
+  }
+}
+@media (max-width: 600px) {
+  /* line 119, ../sass/styles.scss */
+  .item .name {
+    float: none;
+  }
+
+  /* line 125, ../sass/styles.scss */
+  .item .subject {
+    width: 80%;
+  }
+
+  /* line 131, ../sass/styles.scss */
+  #key {
+    display: none;
+  }
+}
